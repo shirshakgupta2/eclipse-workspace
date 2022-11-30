@@ -1,0 +1,48 @@
+package com.tapacad.jdbc;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Properties;
+import java.util.Scanner;
+
+public class transaction {
+
+	private static FileInputStream fileInputStream;
+	private static Connection conn;
+	private static Scanner scan=new Scanner(); 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			fileInputStream = new FileInputStream("C:\\Users\\HP\\eclipse-workspace\\JDBC\\src\\com\\tapacad\\utilite\\mysqlinfo.properties");
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Properties properties = new Properties();
+			properties.load(fileInputStream);
+			String url = properties.getProperty("url");
+			String id = properties.getProperty("username");
+			String pass = properties.getProperty("password");
+			
+			conn = DriverManager.getConnection(url,id,pass);
+			conn
+			
+			
+			
+			
+			
+			
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

@@ -1,0 +1,20 @@
+enum Mobile{
+	APPLE,SAMSUNG(10000),NOKIA;
+	int price;
+	Mobile(int price){
+		this.price=price;
+	}
+	Mobile(){
+		
+	}
+}
+public class ENUMDEFAULT {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Mobile mobile = Mobile.NOKIA;
+		System.out.println(mobile+":"+mobile.price);
+	}
+	
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;inheritance.rough.c&apos; in &apos;inheritance.rough&apos;&#x0D;&#x0A;- Original project: &apos;oops&apos;&#x0D;&#x0A;- Original element: &apos;inheritance.rough.c&apos;&#x0D;&#x0A;- Getter method name: &apos;getC&apos;&#x0D;&#x0A;- Setter method name: &apos;setC&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;c&apos;" flags="589830" getter="getC" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;inheritance{demo1.java[rough^c" insertion="0" setter="setC" stamp="1668360434101" version="1.0" visibility="1"/>
+</session>

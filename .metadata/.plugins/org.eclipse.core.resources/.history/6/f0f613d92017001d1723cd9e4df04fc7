@@ -1,0 +1,33 @@
+package array;
+
+import java.util.Scanner;
+
+public class subarray {
+	public static void main(String[] args) {
+		Scanner scan =new Scanner(System.in);
+		int n=scan.nextInt();
+		
+		
+		int a[]=new int[n];
+		
+		for(int i=0;i<=a.length-1;i++) {
+			a[i]=scan.nextInt();
+		}
+		System.out.println("enter the value of length of subarray");
+		int k=scan.nextInt();
+		while(k>0) {
+		for(int i=0;i<a.length-k;i++) {
+			for(int j=i;j<i+k;i++) {
+				System.out.print(a[i]);
+			}
+			System.out.println();
+		}
+		k--;
+		}
+		
+		
+	}
+	
+ 
+
+}
